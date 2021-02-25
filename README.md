@@ -725,8 +725,8 @@ We use GitHub Issues as the official bug tracker for the Vue Argon Dashboard Lar
 
 ## Licensing
 
-- Copyright 2019 Creative Tim (https://www.creative-tim.com/?ref=vadl-readme)
-- [Creative Tim License](https://www.creative-tim.com/license).
+- Copyright Creative Tim (https://www.creative-tim.com/?ref=vadl-readme)
+- Licensed under MIT (https://github.com/creativetimofficial/vue-argon-dashboard-laravel/blob/master/LICENSE.md)
 
 ## Useful Links
 
