@@ -18,7 +18,7 @@
           opened
           :link="{
             name: 'Examples (API)',
-            icon: 'ct-image-icon',
+            icon: 'fab fa-vuejs',
           }"
         >
           <sidebar-item
@@ -61,10 +61,22 @@
           }"
         />
 
+        <hr
+          class="my-3"
+          style="
+            border: 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            min-width: 80%;
+            overflow: visible;
+            box-sizing: content-box;
+            height: 0;
+          "
+        />
+
         <a
           href="https://www.creative-tim.com/product/vue-argon-dashboard-pro-laravel"
           target="_blank"
-          class="btn btn-sm btn-danger btn-icon ml-sm-3 d-none d-md-block mb-2 mt-1"
+          class="btn btn-danger btn-icon ml-sm-3 d-md-block mb-2 mt-1 mr-3"
           ><span class="btn-inner--icon"
             ><i class="fas fa-download mr-2"></i
           ></span>
@@ -74,7 +86,7 @@
         <a
           href="https://vue-argon-dashboard-laravel.creative-tim.com/documentation/"
           target="_blank"
-          class="btn btn-sm btn-neutral btn-icon ml-sm-3 d-none d-md-block mb-2"
+          class="btn btn-neutral btn-icon ml-sm-3 d-md-block mb-2 mr-3"
           ><span class="btn-inner--icon"
             ><i class="fas fa-file-alt mr-2"></i
           ></span>
@@ -84,7 +96,7 @@
         <a
           href="https://www.creative-tim.com/product/vue-argon-dashboard-laravel"
           target="_blank"
-          class="btn btn-sm btn-info btn-icon ml-sm-3 d-none d-md-block mb-2"
+          class="btn btn-info btn-icon ml-sm-3 d-md-block mb-2 mr-3"
           ><span class="btn-inner--icon"><i class="fas fa-gift mr-2"></i></span>
           <span class="nav-link-inner--text">Download now</span></a
         >
@@ -92,7 +104,7 @@
         <a
           href="https://github.com/creativetimofficial/vue-argon-dashboard-laravel"
           target="_blank"
-          class="btn btn-sm btn-dark btn-icon ml-sm-3 d-none d-md-block mr-2"
+          class="btn btn-dark btn-icon ml-sm-3 d-md-block mr-2 mr-3"
           ><span class="btn-inner--icon"
             ><i class="fab fa-github mr-2"></i
           ></span>

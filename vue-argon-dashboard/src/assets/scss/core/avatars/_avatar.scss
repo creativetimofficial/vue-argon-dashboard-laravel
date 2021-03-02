@@ -46,12 +46,7 @@
   background-size: cover;
 }
 
-.ct-image-icon {
-  background: url("/img/laravel-vue.svg");
-  background-size: cover;
-  width: 14px;
-  height: 35px;
-  margin-right: 8px;
-  margin-left: -7px;
-  display: inline-block;
+.fab.fa-vuejs {
+  font-size: 130% !important;
+  color: #3cab79;
 }

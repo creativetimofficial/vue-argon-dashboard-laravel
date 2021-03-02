@@ -21,7 +21,16 @@
       </template>
       <template v-else>
         <i :class="link.icon"></i>
-        <span class="nav-link-text">{{ link.name }} <b class="caret"></b></span>
+        <div v-if="link.name == 'Examples (API)'">
+          <span class="nav-link-text" style="color: #3cab79"
+            >{{ link.name }} <b class="caret"></b
+          ></span>
+        </div>
+        <div v-else>
+          <span class="nav-link-text"
+            >{{ link.name }} <b class="caret"></b
+          ></span>
+        </div>
       </template>
     </a>
 
@@ -51,7 +60,6 @@
         :href="link.path"
       >
         <template v-if="addLink">
-          <span class="sidebar-mini">{{ linkPrefix }}</span>
           <span class="nav-link-text">{{ link.name }}</span>
         </template>
         <template v-else>

@@ -1,14 +1,13 @@
 /*!
 
 =========================================================
-* Vue Argon Dashboard - v1.0.0
+* Vue Argon Dashboard Laravel - v1.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md)
+* Product Page: https://www.creative-tim.com/product/vue-argon-dashboard-laravel
+* Copyright Creative Tim (https://www.creative-tim.com) & UPDIVISION (https://www.updivision.com)
 
-* Coded by Creative Tim
+* Coded by www.creative-tim.com & www.updivision.com
 
 =========================================================
 
@@ -23,7 +22,10 @@ import './registerServiceWorker'
 import ArgonDashboard from './plugins/argon-dashboard'
 import axios from "axios";
 import VueAxios from "vue-axios";
+import IsDemo from "./plugins/isDemo"
+
 Vue.use(VueAxios, axios);
+Vue.use(IsDemo);
 
 Vue.config.productionTip = false
 

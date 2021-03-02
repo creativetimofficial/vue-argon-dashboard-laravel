@@ -3,6 +3,18 @@
     <base-header type="gradient-success" class="pb-6 pb-6 pt-5 pt-md-5">
     </base-header>
     <div class="container-fluid mt-5">
+      <div class="alert alert-danger">
+        <strong
+          >Add, Edit, Delete features are not functional. This is a PRO feature!
+          Click
+          <a
+            href="https://www.creative-tim.com/live/vue-argon-dashboard-pro-laravel"
+            target="_blank"
+            >here</a
+          >
+          to see the PRO product.</strong
+        >
+      </div>
       <card body-classes="px-0 pb-1" footer-classes="pb-2">
         <div class="card-header border-0">
           <div class="row align-items-center">
