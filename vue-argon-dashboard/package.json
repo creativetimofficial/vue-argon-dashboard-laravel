@@ -9,19 +9,25 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "bootstrap": "4.5.0",
     "bootstrap-vue": "2.15.0",
     "chart.js": "2.9.3",
     "core-js": "3.6.5",
     "flatpickr": "4.6.3",
+    "jsona": "^1.8.0",
     "nouislider": "14.6.0",
     "register-service-worker": "1.7.1",
     "vue": "2.6.11",
+    "vue-authenticate": "1.4.1",
     "vue-chartjs": "3.5.0",
     "vue-clipboard2": "0.3.1",
     "vue-flatpickr-component": "8.1.5",
+    "vue-password-strength-meter": "^1.7.2",
     "vue-router": "3.3.4",
-    "vue2-transitions": "0.3.0"
+    "vue2-transitions": "0.3.0",
+    "vuex": "^3.6.2",
+    "zxcvbn": "^4.4.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.4.6",
@@ -44,7 +50,9 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {"no-unused-vars": "off"},
+    "rules": {
+      "no-unused-vars": "off"
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
