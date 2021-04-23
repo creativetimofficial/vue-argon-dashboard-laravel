@@ -115,8 +115,6 @@ export default {
       try {
         await this.$store.dispatch("login", { user, requestOptions });
       } catch (error) {
-        console.error(error);
-        console.log("error object", { error });
         this.$notify({
           type: "danger",
           message: "Invalid credentials!",
