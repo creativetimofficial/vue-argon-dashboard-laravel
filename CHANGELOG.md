@@ -9,3 +9,6 @@ All notable changes to `Vue Argon Dashboard Laravel`  will be documented in this
 - Login
 - Register
 - Profile edit
+
+## Version 1.0.1
+Compatibility with node.js v16.x LTS
