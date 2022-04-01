@@ -6,7 +6,7 @@ _Frontend version_: Argon Dashboard v1.2.0. More info at https://www.creative-ti
 
 _Vue version_: Vue Argon Dashboard v1.1.1. More info at https://www.creative-tim.com/product/vue-argon-dashboard
 
-![Product Image](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-argon-dashboard-laravel/intro.gif)
+![Product Image](https://s3.amazonaws.com/creativetim_bucket/products/352/original/opt_ad_vue_laravel_thumbnail.jpg)
 
 What if your frontend came not only with reusable components, but also with a reusable backend? API-driven development is more than just a buzzword and we partnered with [UPDIVISION](https://updivision.com) to prove it. Build awesome-looking apps with a flexible architecture across a variety of devices and operating systems with Vue Argon Dashboard Laravel.
 
