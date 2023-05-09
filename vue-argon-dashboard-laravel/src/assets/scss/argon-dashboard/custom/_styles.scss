@@ -1,0 +1,22 @@
+.colored-toast-error {
+    background-color: $danger  !important
+}
+  
+.colored-toast-error .swal2-html-container {
+  color: $white;
+  font-size: 12px !important;
+}
+
+.colored-toast-success {
+  background-color: $success  !important
+}
+
+.colored-toast-success .swal2-html-container {
+  color: $white;
+  font-size: 12px !important;
+}
+
+.argon-error {
+  position: relative;
+  color: $danger;
+}
