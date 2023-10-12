@@ -10,10 +10,10 @@ const headers = {
 
 async function login(user) {
   const response = await axios.post(API_URL + '/login',
-  {
-    email: user.email,
-    password: user.password
-  }, {headers});
+    {
+      email: user.email,
+      password: user.password
+    }, { headers });
 
   if (response.data.access_token) {
     localStorage.setItem('access_token', response.data.access_token);
@@ -22,19 +22,22 @@ async function login(user) {
 }
 
 async function logout() {
-  await axios.post(API_URL + '/logout', {}, {headers: authHeader()});
-  localStorage.removeItem('access_token');
+  try {
+    await axios.post(API_URL + '/logout', {}, { headers: authHeader() });
+  } finally {
+    localStorage.removeItem('access_token');
+  }
 }
 
 async function register(user) {
 
   const response = await axios.post(API_URL + '/register',
-  {
-    name: user.name,
-    email: user.email,
-    password: user.password,
-    password_confirmation: user.confirm_password,
-  }, {headers});
+    {
+      name: user.name,
+      email: user.email,
+      password: user.password,
+      password_confirmation: user.confirm_password,
+    }, { headers });
 
   if (response.data.access_token) {
     localStorage.setItem('access_token', response.data.access_token);
@@ -44,22 +47,22 @@ async function register(user) {
 
 async function forgotPassword(data) {
   const response = await axios.post(API_URL + '/password-forgot',
-  {
-    email: data.email,
-    redirect_url: data.redirect_url
-  }, {headers});
+    {
+      email: data.email,
+      redirect_url: data.redirect_url
+    }, { headers });
 
   return response.data;
 }
 
 async function resetPassword(data) {
   const response = await axios.post(API_URL + '/password-reset',
-  {
-    password: data.password,
-    password_confirmation: data.password_confirmation,
-    email: data.email,
-    token: data.token
-  }, {headers});
+    {
+      password: data.password,
+      password_confirmation: data.password_confirmation,
+      email: data.email,
+      token: data.token
+    }, { headers });
 
   return response.data;
 }

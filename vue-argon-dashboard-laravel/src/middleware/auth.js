@@ -6,6 +6,16 @@ export default async function auth({ next }) {
     return next({ name: "Login" });
   }
   
-  await store.dispatch("profile/me");
-  next();
+  try{
+    await store.dispatch("profile/me");
+    next();
+  }catch(error){
+    try {
+      await store.dispatch("auth/logout");
+    } finally {
+      // eslint-disable-next-line no-unsafe-finally
+      return next({ name: "Login" });
+    }
+  }
+  
 }

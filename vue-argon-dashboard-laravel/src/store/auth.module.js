@@ -14,8 +14,11 @@ export const auth = {
       commit('isAuthenticated', true);
     },
     async logout({ commit }) {
-      await AuthService.logout();
-      commit('isAuthenticated', false);
+      try {
+        await AuthService.logout();
+      } finally {
+        commit('isAuthenticated', false);
+      }
     },
     async register({ commit }, user) {
       await AuthService.register(user);
