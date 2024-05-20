@@ -3,7 +3,11 @@
 use Illuminate\Support\Facades\Facade;
 
 return [
-
+    /**
+     * our demo variables
+     */
+    'hour' => env('SCHEDULED_HOUR', ''),
+    'min' => env('SCHEDULED_MIN', ''),
     /*
     |--------------------------------------------------------------------------
     | Application Name
